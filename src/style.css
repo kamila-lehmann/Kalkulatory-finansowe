@@ -1,0 +1,255 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: #222;
+  background: url(./images/money.jpg) no-repeat center/cover fixed #fff;
+  background-blend-mode: multiply;
+  font: 300 100%/1.5 "Work Sans", sans-serif;
+  min-height: 100.1vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a:hover {
+  font-weight: bold;
+}
+
+/* Header Styles */
+.main-header {
+  max-width: 100vw;
+  text-shadow: 1px 1px 1px rgba(122, 122, 122, 0.5);
+  background-color: rgba(155, 155, 155, 0.25);
+}
+
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  padding: 1.5em 0;
+  margin: 0 auto;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.main-nav {
+  padding-bottom: 1.2rem;
+}
+
+.main-nav li {
+  margin: 0 auto 1em;
+  padding: 1em;
+  justify-self: center;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.4em;
+  max-width: 400px;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* Calculator Styles */
+
+.calc-salary,
+.calc-costs,
+.calc-tax,
+.calc-currency {
+  max-width: 80%;
+  max-width: 400px;
+  margin: 1em auto 4em;
+  border: 1px solid rgb(189, 185, 185);
+  border-radius: 10px;
+  box-shadow: 0 0 0.25em rgba(223, 223, 223, 0.9);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #fff;
+}
+
+h2 {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.form_1 {
+  text-align: left;
+}
+
+.form_1 div:nth-child(n + 2) {
+  padding: 0.75em 0 0.5em 3em;
+}
+
+.form_1 div:nth-child(6) {
+  padding: 0 0 0.5em 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.wynagrodzenie label,
+.wynagrodzenie_netto label,
+.total_costs_section label,
+.tax_final_section label {
+  display: block;
+  margin: 0.5em 0 0.75em;
+}
+.wynagrodzenie,
+.wynagrodzenie_netto,
+.total_costs_section,
+.tax_final_section {
+  text-align: center;
+  padding-top: 0.75em;
+}
+
+.form_2 label,
+.form_3 label {
+  display: block;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.tax_final_section > label,
+.total_costs_section > label,
+.wynagrodzenie_netto > label {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.tax_final_section,
+.total_costs_section {
+  margin-bottom: 2em;
+}
+
+input,
+button {
+  margin: 0;
+  border: none;
+  border-radius: 0.25em;
+  height: auto;
+  width: auto;
+  outline: 0;
+  padding: 1em;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 0 0.5em rgba(205, 205, 205, 0.708);
+  text-align: center;
+}
+
+input:read-only {
+  background-color: #dcebf7;
+}
+
+input:focus,
+button:active {
+  background-color: rgb(233, 239, 250);
+}
+
+.info {
+  font-size: 0.75em;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.oblicz {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.oblicz button {
+  font: 300 90%/1.5 "Work Sans", sans-serif;
+}
+
+.oblicz button:hover {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  margin: 2em auto;
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+th {
+  background-color: rgb(78, 78, 78);
+  color: rgb(233, 239, 250);
+  padding: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+td,
+th {
+  padding: 0.75em;
+}
+
+tfoot td {
+  background-color: #ffffff;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.form_4 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form_4 label[for^="currency"] {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+fieldset {
+  width: 80%;
+  border: none;
+  margin: 0 auto;
+}
+
+fieldset label {
+  font-size: 0.9em;
+}
+
+input[type="number"] {
+  width: 250px;
+}
+
+.currency {
+  padding-top: 1em;
+}
+
+.currency label {
+  padding-left: 1.5em;
+  padding-right: 0.25em;
+}
+
+.currency_result {
+  margin: 2em auto;
+}
+
+@media (min-width: 992px) {
+  #root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-header {
+    min-height: 100vh;
+  }
+}
