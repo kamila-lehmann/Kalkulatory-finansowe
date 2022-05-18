@@ -1,8 +1,6 @@
 /* Kalkulator Wynagrodzeń */
 
 const Wynagrodzenia = () => {
-  //const button_salary = document.getElementById("oblicz_wynagrodzenie");
-
   function calculateSalary() {
     const wynagrodzenie_brutto = document.getElementById("wynagrodzenie");
     const wynagrodzenie_netto = document.getElementById("wynagrodzenie_netto");
@@ -47,8 +45,6 @@ const Wynagrodzenia = () => {
     } else {
       ulga_klasa_kwota = 0;
     }
-
-    console.log(ulga_klasa_kwota);
 
     // Calculate the amount of tax decductible expenses
     if (kup.checked) {

@@ -72,7 +72,6 @@ const Waluty = () => {
       let item = tableData[i];
       currencyArray.push(item.innerText);
     }
-    console.log(currencyArray);
 
     // Define either purchase or sale amount
     const purchase = purchase_amount.value;

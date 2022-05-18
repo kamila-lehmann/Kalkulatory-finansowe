@@ -112,8 +112,8 @@ const Koszty = () => {
         <div className="oblicz">
           <button
             type="button"
-            id="oblicz_wynagrodzenie"
-            name="oblicz_wynagrodzenie"
+            id="oblicz_koszty"
+            name="oblicz_koszty"
             onClick={() => calculateCosts()}
           >
             Oblicz

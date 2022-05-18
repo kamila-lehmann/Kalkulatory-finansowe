@@ -133,8 +133,8 @@ const Podatek = () => {
         <div className="oblicz">
           <button
             type="button"
-            id="oblicz_wynagrodzenie"
-            name="oblicz_wynagrodzenie"
+            id="oblicz_podatek"
+            name="oblicz_podatek"
             onClick={() => calculateTax()}
           >
             Oblicz
