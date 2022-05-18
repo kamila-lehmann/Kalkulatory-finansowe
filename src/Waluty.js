@@ -1,11 +1,24 @@
 /* Kalkulator Walutowy */
+import { useEffect } from "react";
 
 const Waluty = () => {
-  // Fetch exhange rates from NBP API
-  fetch("https://api.nbp.pl/api/exchangerates/tables/c?format=json")
-    .then((res) => res.json())
-    .then((data) => generateTableData(data))
-    .catch((error) => console.log("Error fetching data", error));
+  useEffect(() => {
+    requestCurrencies();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Fetch exchange rates from NBP API
+  async function requestCurrencies() {
+    try {
+      const res = await fetch(
+        "https://api.nbp.pl/api/exchangerates/tables/c?format=json"
+      );
+      const json = await res.json();
+      const data = generateTableData(json);
+      return data;
+    } catch (error) {
+      console.log("Error fetching data", error);
+    }
+  }
 
   // Generate data to fill in the table
   function generateTableData(data) {
